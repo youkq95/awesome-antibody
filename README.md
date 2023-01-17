@@ -7,6 +7,7 @@
 - [Antibody structure prediction](#antibody-structure-prediction)
 - [Antibody optimization and design](#antibody-optimization-and-design)
 - [Pretrained language model](#pretrained-language-model)
+- [Properties prediction](#properties-prediction)
 ## Data
 - **Absolut!**
 - **Observed Antibody Space(2022)**
@@ -34,7 +35,7 @@
 	- Anonymous. 2022. “**On Pre-Training Language Model for Antibody.**” In . [https://openreview.net/forum?id=zaq4LV55xHl](https://openreview.net/forum?id=zaq4LV55xHl).
 	- This work (currently under peer review) developes the first comprehensive antibody benchmark, including tasks with varying antibody specificity: antigen-binding discrimination, antibody paratope prediction, B cell maturation analysis and antibody dicovery. The authors observed that including biological mechanism of antibody maturation in the training process improve the language model's performance on highly antibody-specific question.
 	- {{embed ((63bf74e9-cef9-4640-9984-487374658b21))}}
-- ## Properties prediction
+## Properties prediction
 - **solPredict by Eli Lilly(2022)**
 	- Feng, Jiangyan, Min Jiang, James Shih, and Qing Chai. 2022. “Antibody Apparent Solubility Prediction from Sequence by Transfer Learning.” *IScience* 25 (10): 105173. [https://doi.org/10.1016/j.isci.2022.105173](https://doi.org/10.1016/j.isci.2022.105173).
 	- Eli Lilly publish a research paper on *iScience* about constructing model `solPredict` for antibody apparent solubility prediction using protein pretrained model combined with transfer learning using in-house antibody solubility dataset. The [code](https://github.com/JiangyanFeng-Lilly/solPredict_manuscript_codes_2022) is open without dataset.

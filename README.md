@@ -9,7 +9,9 @@
 - [Pretrained language model](#pretrained-language-model)
 - [Properties prediction](#properties-prediction)
 ## Data
-- **Absolut!**
+- **Absolut!(2023)**
+	- A work form [Victor Greiff](https://greifflab.org/) group. `Abosolut!`  allows the user to generate custom datasets by discretizing new antigens or annotating custom CDRH3 sequences enabling the on-demand generation of large synthetic datasets for 3D-antibody-antigen binding generated under the same, deterministic settings, with accessible computing resources. The documentation and code is  available at [GitHub](https://github.com/csi-greifflab/Absolut).
+	- Robert, Philippe A., Rahmad Akbar, Robert Frank, Milena Pavlović, Michael Widrich, Igor Snapkov, Andrei Slabodkin, et al. 2022. “**Unconstrained Generation of Synthetic Antibody–Antigen Structures to Guide Machine Learning Methodology for Antibody Specificity Prediction.**” *Nature Computational Science* 2 (12): 845–65. [https://doi.org/10.1038/s43588-022-00372-4](https://doi.org/10.1038/s43588-022-00372-4).
 - **Observed Antibody Space(2022)**
 	- Olsen, Tobias H., Fergus Boyles, and Charlotte M. Deane. 2022. “**Observed Antibody Space: A Diverse Database of Cleaned, Annotated, and Translated Unpaired and Paired Antibody Sequences.**” *Protein Science* 31 (1): 141–46. [https://doi.org/10.1002/pro.4205](https://doi.org/10.1002/pro.4205).
 	- The Observed Antibody Space (OAS) database was created in 2018 to offer clean, annotated, and translated repertoire data. The database is accessible at http://opig.stats.ox.ac.uk/webapps/oas/, and all data are freely available for download.
@@ -17,7 +19,9 @@
 	- Jain, Tushar, Tingwan Sun, Stéphanie Durand, Amy Hall, Nga Rewa Houston, Juergen H. Nett, Beth Sharkey, et al. 2017. “**Biophysical Properties of the Clinical-Stage Antibody Landscape.**” *Proceedings of the National Academy of Sciences* 114 (5): 944–49. [https://doi.org/10.1073/pnas.1616408114](https://doi.org/10.1073/pnas.1616408114).
 	- A comprehensive analysis of these properties for essentially the full set of antibody drugs that have been tested in phase-2 or -3 clinical trials, or are approved by the FDA (as of 2017).
 ## Antibody structure prediction
-- **IgFold**
+- **IgFold(2022)**
+	- Currently SOTA of antibody structure prediction from sequence only. This work is from Jeffrey J. Gray lab using `AntiBERTy` pretrained language model. The code and plug-and-use python package is available: https://github.com/Graylab/IgFold.
+	- Ruffolo, Jeffrey A., Lee-Shin Chu, Sai Pooja Mahajan, and Jeffrey J. Gray. 2022. “**Fast, Accurate Antibody Structure Prediction from Deep Learning on Massive Set of Natural Antibodies.**” bioRxiv. [https://doi.org/10.1101/2022.04.20.488972](https://doi.org/10.1101/2022.04.20.488972).
 ## Antibody optimization and design
 - **Fragment-based antibody de novo design(2022)**
 	- Aguilar Rangel, Mauricio, Alice Bedwell, Elisa Costanzi, Ross J. Taylor, Rosaria Russo, Gonçalo J. L. Bernardes, Stefano Ricagno, Judith Frydman, Michele Vendruscolo, and Pietro Sormanni. 2022. “**Fragment-Based Computational Design of Antibodies Targeting Structured Epitopes.**” *Science Advances* 8 (45): eabp9540. [https://doi.org/10.1126/sciadv.abp9540](https://doi.org/10.1126/sciadv.abp9540).
@@ -27,6 +31,9 @@
 	- This work (by AI+antibody biotech company [Absci](https://www.absci.com/)) demonstrates that the approach of combining high-throughput affinity measurements and generative AI can accelerate drug(antibody) discovery. The data was made [open-sourced](https://github.com/AbsciBio/unlocking-de-novo-antibody-design).
 	- A previous work of Absci on the same topic:
 	   Bachas, Sharrol, Goran Rakocevic, David Spencer, Anand V. Sastry, Robel Haile, John M. Sutton, George Kasun, et al. 2022. “**Antibody Optimization Enabled by Artificial Intelligence Predictions of Binding Affinity and Naturalness**.” bioRxiv. [https://doi.org/10.1101/2022.08.16.504181](https://doi.org/10.1101/2022.08.16.504181).
+- **DeepAAI predict neutralizability (2022)**
+	- DeepAAI learns latent representation from known pairs of antibody-antigen. The representation was used to predict antibody's binding neutralization landscape to a set of antigens. The
+	- Zhang, Jie, Yishan Du, Pengfei Zhou, Jinru Ding, Shuai Xia, Qian Wang, Feiyang Chen, et al. 2022. “**Predicting Unseen Antibodies’ Neutralizability via Adaptive Graph Neural Networks.**” *Nature Machine Intelligence* 4 (11): 964–76. [https://doi.org/10.1038/s42256-022-00553-w](https://doi.org/10.1038/s42256-022-00553-w).
 ## Pretrained language model
 - **AntiBERTy(2021)**
 	- Ruffolo, Jeffrey A., Jeffrey J. Gray, and Jeremias Sulam. 2021. “**Deciphering Antibody Affinity Maturation with Language Models and Weakly Supervised Learning.**” arXiv. [https://doi.org/10.48550/arXiv.2112.07782](https://doi.org/10.48550/arXiv.2112.07782).
@@ -34,7 +41,6 @@
 - **Antibody Benchmark(2022)**
 	- Anonymous. 2022. “**On Pre-Training Language Model for Antibody.**” In . [https://openreview.net/forum?id=zaq4LV55xHl](https://openreview.net/forum?id=zaq4LV55xHl).
 	- This work (currently under peer review) developes the first comprehensive antibody benchmark, including tasks with varying antibody specificity: antigen-binding discrimination, antibody paratope prediction, B cell maturation analysis and antibody dicovery. The authors observed that including biological mechanism of antibody maturation in the training process improve the language model's performance on highly antibody-specific question.
-	- {{embed ((63bf74e9-cef9-4640-9984-487374658b21))}}
 ## Properties prediction
 - **solPredict by Eli Lilly(2022)**
 	- Feng, Jiangyan, Min Jiang, James Shih, and Qing Chai. 2022. “Antibody Apparent Solubility Prediction from Sequence by Transfer Learning.” *IScience* 25 (10): 105173. [https://doi.org/10.1016/j.isci.2022.105173](https://doi.org/10.1016/j.isci.2022.105173).
